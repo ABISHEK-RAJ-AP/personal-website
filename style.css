@@ -1,0 +1,737 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #6a5acd; /* Purple color */
+    color: #fff;
+    padding: 15px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    text-decoration: underline;
+}
+
+.theme-toggle {
+    cursor: pointer;
+}
+
+/* Intro Section Styles */
+.intro-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+.intro-content {
+    display: flex;
+    align-items: center;
+}
+
+.intro-image {
+    margin-right: 20px; /* Spacing between image and text */
+}
+
+.intro-text {
+    max-width: 600px; /* Limit text width */
+}
+
+/* Section Styles */
+.section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h1,
+h2 {
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #6a5acd; /* Purple color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #483d8b; /* Darker purple */
+}
+
+/* Achievements Styles */
+.achievement-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.achievement-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Scroll to Top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #6a5acd; /* Purple color */
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+}
+
+.scroll-to-top:hover {
+    background: #483d8b; /* Darker purple */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #6a5acd; /* Purple color */
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+    }
+}
+
+.light-theme {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.dark-theme {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+/* Dark Mode Styles */
+.dark-theme header,
+.dark-theme footer {
+    background: #6a5acd; /* Purple color */
+}
+
+.dark-theme .btn {
+    background: #483d8b; /* Darker purple */
+}
+
+.dark-theme .scroll-to-top {
+    background: #483d8b; /* Darker purple */
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #6a5acd; /* Purple color */
+    color: #fff;
+    padding: 15px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    text-decoration: underline;
+}
+
+.theme-toggle {
+    cursor: pointer;
+}
+
+/* Intro Section Styles */
+.intro-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+.intro-content {
+    display: flex;
+    align-items: center;
+}
+
+.intro-image {
+    margin-right: 20px; /* Spacing between image and text */
+}
+
+.intro-text {
+    max-width: 600px; /* Limit text width */
+}
+
+/* Section Styles */
+.section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h1,
+h2 {
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #6a5acd; /* Purple color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #483d8b; /* Darker purple */
+}
+
+/* Achievements Styles */
+.achievement-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.achievement-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Form Styles */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    max-width: 500px;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.contact-form label {
+    text-align: left;
+    width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    align-self: flex-start; /* Align the button to the left */
+}
+
+/* Scroll to Top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #6a5acd; /* Purple color */
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+}
+
+.scroll-to-top:hover {
+    background: #483d8b; /* Darker purple */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #6a5acd; /* Purple color */
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+    }
+}
+
+.light-theme {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.dark-theme {
+    background-color: #333;
+    color: #f4f4f4;
+}
+/* Contact Section */
+#contact {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #6a5acd; /* Purple color */
+}
+
+#contact p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.contact-form {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #6a5acd; /* Purple color */
+    box-shadow: 0 0 8px rgba(106, 90, 205, 0.5); /* Purple glow */
+    outline: none;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+/* Submit Button Styles */
+.contact-form .btn-submit {
+    background-color: #6a5acd; /* Purple color */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.contact-form .btn-submit:hover {
+    background-color: #483d8b; /* Darker purple */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+.contact-form .btn-submit:active {
+    background-color: #372d66; /* Even darker purple when clicked */
+    transform: scale(1); /* Reset scale on click */
+}
+
+/* Social Links Styling */
+#contact .social-links {
+    margin-top: 40px;
+    list-style-type: none;
+    padding: 0;
+}
+
+#contact .social-links li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+#contact .social-links a {
+    text-decoration: none;
+    color: #6a5acd; /* Purple color */
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+#contact .social-links a:hover {
+    color: #483d8b; /* Darker purple */
+}
+
+/* Responsive Design for Contact Form */
+@media (max-width: 768px) {
+    #contact {
+        padding: 40px 20px;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+}
+/* General Reset and Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation Bar Styling */
+header nav {
+    background-color: #6a5acd; /* Purple */
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.nav-links a.active {
+    border-bottom: 3px solid #fff;
+}
+
+.theme-toggle {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+#theme-switch {
+    display: none;
+}
+
+#theme-switch + label {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Main Content Section */
+main {
+    padding: 20px 0;
+}
+
+#projects h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-item {
+    width: 30%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-item h2 {
+    font-size: 22px;
+    margin: 15px 0;
+    color: #6a5acd;
+}
+
+.project-item p {
+    padding: 0 20px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.project-link {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #6a5acd;
+    color: #fff;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #4b3cae;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #6a5acd;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-item {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-item {
+        width: 100%;
+    }
+
+    nav .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: #ff6347;
+}
+
+.theme-toggle {
+    display: flex;
+    align-items: center;
+}
+
+.theme-toggle input {
+    margin-right: 10px;
+}
+
+/* Main section */
+.section {
+    padding: 40px;
+    text-align: center;
+}
+
+.section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.project-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-item {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 15px;
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project-link {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #ff6347;
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
