@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Abishek Raj</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Styles for the project items */
+        .project-list {
+            display: flex; /* Use flexbox for layout */
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center items */
+            gap: 20px; /* Space between project items */
+            margin: 20px; /* Margin around the project list */
+        }
+
+        .project-item {
+            border: 1px solid #ddd; /* Adds a border to the project item */
+            border-radius: 8px; /* Rounds the corners */
+            padding: 20px; /* Adds padding inside the project item */
+            width: 100%; /* Full width of the container */
+            max-width: 600px; /* Maximum width for better readability */
+            transition: transform 0.3s; /* Smooth transform on hover */
+            background-color: #f9f9f9; /* Light background color */
+            text-align: center; /* Center-align text */
+        }
+
+        .project-item:hover {
+            transform: scale(1.02); /* Slightly enlarges the project item on hover */
+        }
+
+        .project-link {
+            display: inline-block; /* Makes the link a block element */
+            padding: 10px 20px; /* Adds padding inside the button */
+            margin-top: 10px; /* Adds space above the button */
+            background-color: #007bff; /* Primary button color */
+            color: white; /* Button text color */
+            text-decoration: none; /* Removes underline from the link */
+            border-radius: 5px; /* Rounds button corners */
+            transition: background-color 0.3s; /* Smooth background color change */
+            margin-bottom: 10px; /* Space below the button */
+        }
+
+        .project-link:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+        }
+
+        .tools-stack {
+            background-color: #e9ecef; /* Light grey background for the tech stack */
+            border-radius: 5px; /* Rounds corners */
+            padding: 10px; /* Adds padding inside the block */
+            margin-top: 10px; /* Space above the tech stack */
+            font-size: 14px; /* Smaller font size */
+            font-family: 'Courier New', Courier, monospace; /* Monospace font for tech stack */
+        }
+
+        .tools-stack strong {
+            color: #333; /* Darker color for the label */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .project-item {
+                width: 90%; /* Make project items take 90% width on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body class="light-theme">
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <input type="checkbox" id="theme-switch">
+                <label for="theme-switch">🌙</label>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="projects" class="section">
+            <h1>Projects</h1>
+            <div class="project-list">
+                <!-- Project 1 -->
+                <div class="project-item">
+                    <img src="assets/citysync.jpeg" alt="City Sync-Reporting App" class="project-image">
+                    <h2>City Sync-Reporting App</h2>
+                    <p>An integrated app for tourism, navigation, transportation, issue reporting, and news functionalities.</p>
+                    <p class="tools-stack"><strong>Tools/Technologies:</strong> React, Node.js, MongoDB, Google Maps API</p>
+                    <a href="https://github.com/your-github/city-sync-reporting-app" target="_blank" class="project-link">View on GitHub</a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-item">
+                    <img src="assets/moview.jpg" alt="AI-driven Solutions Development" class="project-image">
+                    <h2>AI-driven Solutions Development</h2>
+                    <p>Developed AI solutions including a personalized Movie Recommendation System and Fraud Detection System.</p>
+                    <p class="tools-stack"><strong>Tools/Technologies:</strong> Python, TensorFlow, Flask</p>
+                    <a href="https://github.com/ABISHEKBALANCE/movie_recommendation_system_" target="_blank" class="project-link">View on GitHub</a>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-item">
+                    <img src="assets/ledger.jpeg" alt="Ledger Lock-Blockchain Banking Website" class="project-image">
+                    <h2>Ledger Lock-Blockchain Banking Website</h2>
+                    <p>Engineered a secure banking website using Blockchain Technology.</p>
+                    <p class="tools-stack"><strong>Tools/Technologies:</strong> HTML, CSS, JavaScript, Ethereum</p>
+                    <a href="https://github.com/your-github/ledger-lock" target="_blank" class="project-link">View on GitHub</a>
+                </div>
+
+                <!-- Add more project blocks as needed -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Abishek Raj. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
