@@ -46,7 +46,7 @@ The website consists of three main pages:
 ## 🌐 Deployment
 
 The website is hosted on [GitHub Pages](https://pages.github.com/). Check it out live at:  
-**🔗 [Visit My Portfolio](https://your-username.github.io/your-repo-name)**
+**🔗 [Visit My Portfolio](https://abishekbalance.github.io/personal-website/)**
 
 ---
 
